@@ -1,0 +1,227 @@
+body {
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(233, 229, 229);
+  font-family: "Poppins", sans-serif;
+}
+a {
+  text-decoration: none;
+}
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+h1 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  margin: 50px 0 10px 0;
+}
+p {
+  margin: 5px;
+  font-size: 20px;
+}
+a {
+  font-size: 20px;
+  text-decoration: none;
+  color: rgb(255, 145, 0);
+  font-weight: 250;
+}
+footer {
+  /* background-color: rgb(97, 97, 97); */
+  display: flex;
+  padding: 100px 30px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+img {
+  width: 100%;
+  background-color: orange;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 20px;
+  text-align: center;
+  text-decoration: none;
+}
+.switch {
+  height: 40px;
+  width: 80px;
+  background-color: rgb(26, 23, 23);
+  border-radius: 20px;
+  position: relative;
+}
+.flicker {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  background: rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  box-shadow: inset 4px 4px 4px rgba(255, 255, 255),
+    inset -4px -4px 4px rgba(195 193 198 / 90%);
+  transition: 0.3s;
+}
+.dark {
+  background-color: rgb(58, 58, 58);
+  transition: 0.3s;
+}
+.moon {
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgba(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 45px;
+}
+.dark .flicker {
+  transform: translateX(40px);
+}
+.main {
+  display: flex;
+  height: 80vh;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+.main-text {
+  width: 100%;
+  padding: 30px;
+}
+.dark > * {
+  color: white;
+}
+.sub-section {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.square {
+  width: 98%;
+  margin: 1%;
+  height: 350px;
+  text-align: center;
+  background-color: rgba(255, 255, 255);
+  padding-bottom: 250px;
+}
+
+.dark .square {
+  background-color: rgb(71, 71, 71);
+}
+.hero-img {
+  position: relative;
+  width: 50%;
+  height: 350px;
+  display: block;
+}
+.cube {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  /* background-color: pink; */
+  transform: rotate(-25deg) skew(25deg);
+}
+.cube:before {
+  position: absolute;
+  content: "";
+  height: 100%;
+  width: 21px;
+  /* background-color: blue; */
+  transform: skewY(-45deg);
+  left: -20px;
+  bottom: -10px;
+}
+.cube:after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 21px;
+  /* background-color: red; */
+  transform: skewX(-45deg);
+  left: -10px;
+  bottom: -20px;
+}
+#html {
+  left: 100px;
+  bottom: 80px;
+  background-image: url("images/html-square.png");
+  background-size: cover;
+  background-color: rgb(230, 48, 230);
+  box-shadow: -60px 50px 20px rgb(50 50 50 / 15%);
+}
+#html:before {
+  background-color: rgb(238, 91, 238);
+}
+#html:after {
+  background-color: rgb(240, 125, 240);
+}
+#css {
+  left: 250px;
+  bottom: 240px;
+  background-image: url("images/css-square.png");
+  background-size: cover;
+  background-color: rgb(230, 48, 139);
+  box-shadow: -60px 70px 20px rgb(50 50 50 / 15%);
+}
+#css:before {
+  background-color: rgb(243, 103, 201);
+}
+#css:after {
+  background-color: rgb(241, 145, 241);
+}
+#javascript {
+  left: 450px;
+  bottom: 200px;
+  background-image: url("images/javascript-square.png");
+  background-size: cover;
+  background-color: rgb(227, 230, 48);
+  box-shadow: -60px 70px 20px rgb(50 50 50 / 15%);
+}
+#javascript:before {
+  background-color: rgb(255, 230, 0);
+}
+#javascript:after {
+  background-color: rgb(182, 211, 76);
+}
+#react {
+  left: 350px;
+  bottom: 40px;
+  background-image: url("images/react-square.png");
+  background-size: cover;
+  background-color: rgb(22, 231, 238);
+  box-shadow: -60px 70px 20px rgb(50 50 50 / 15%);
+}
+#react:before {
+  background-color: rgb(52, 206, 233);
+}
+#react:after {
+  background-color: rgb(128, 183, 228);
+}
+@media only screen and (min-width: 920px) {
+  .main-text {
+    width: 50%;
+  }
+  .square {
+    width: 48%;
+    height: 600px;
+    margin: 1%;
+    padding-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 1300px) {
+  .hero-img {
+    display: none;
+  }
+}
